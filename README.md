@@ -107,7 +107,7 @@ This extension is configured as follows in **manifest.json**:
 ---
 
 ## 📜 License
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 💡 **Congratulations on building Swagger Auto Authorize!** 🎉  
 If you need any help, feel free to ask! 🚀
