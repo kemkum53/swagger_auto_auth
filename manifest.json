@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Swagger Auto Authorize",
+    "version": "1.1",
+    "description": "Swagger UI'ye JWT token otomatik olarak ekler.",
+    "permissions": ["storage"],
+    "host_permissions": ["*://*/swagger/*"],
+    "content_scripts": [
+        {
+            "matches": ["*://*/swagger/*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons":{
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}

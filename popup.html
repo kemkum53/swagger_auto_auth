@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swagger Key Manager</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Swagger Key Manager</h2>
+        <p id="current-url">Current URL: Loading...</p>
+
+        <label for="jwtKey">JWT Key:</label>
+        <input type="text" id="jwtKey" placeholder="Enter JWT Token">
+
+        <label class="checkbox-label">
+            <input type="checkbox" id="enableScript">
+            Enable Script Execution
+        </label>
+
+        <div class="button-group">
+            <button id="saveKey" class="save">Save</button>
+            <button id="deleteKey" class="delete">Delete</button>
+        </div>
+
+        <p id="status"></p>
+
+        <div class="dark-mode-toggle">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+            </label>
+            <span>Dark Mode</span>
+        </div>
+    </div>
+</body>
+
+</html>
