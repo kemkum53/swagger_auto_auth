@@ -18,7 +18,7 @@ It automatically inserts your saved JWT token into Swagger UI, making API testin
 ### 1️⃣ **Manual Installation (Developer Mode)**
 1. **Clone or download this repository:**
    ```sh
-   git clone https://github.com/your-username/swagger-auto-authorize.git
+   git clone https://github.com/kemkum53/swagger-auto-authorize.git
    ```
 2. **Open Chrome Extensions page:**  
    `chrome://extensions/`
