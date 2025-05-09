@@ -96,6 +96,25 @@ This extension is configured as follows in **manifest.json**:
 }
 ```
 
+### 🔐 Permissions Configuration
+
+If your Swagger UI URL does not follow the pattern `*/swagger/*`, you need to update the `host_permissions` and `content_scripts.matches` fields accordingly.
+
+Here is an example configuration you can use:
+
+```json
+"host_permissions": ["<all_urls>"],
+"content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+    }
+],
+```
+
+> ℹ️ **Note:** Although `<all_urls>` allows the extension to request access to all pages, the script **will not run automatically**. It is only executed **after being explicitly activated by the user**, ensuring controlled and intentional behavior.
+
 ---
 
 ## 🏗️ **Development & Contributions**
